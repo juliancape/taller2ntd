@@ -8,16 +8,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="bg-primary text-white p-3 text-center">
-        <h1>Sitio Web sobre API REST</h1>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">API REST</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#articulo1">Artículo 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#articulo2">Artículo 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#articulo3">Artículo 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conclusiones">Conclusiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#videos">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#imagenes">Imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="container">
         <!-- Inicio -->
         <section id="inicio" class="bg-light p-4 mt-4 rounded">
             <h2 class="text-center text-primary">¿Qué es una API REST?</h2>
-            <p class="text-dark">Una API REST (Representational State Transfer) es un conjunto de reglas que permiten a sistemas interactuar con otros a través de HTTP. Es ampliamente usada en el desarrollo web por su sencillez, escalabilidad, y capacidad de independencia entre cliente y servidor. Las APIs REST operan sobre los métodos HTTP (GET, POST, PUT, DELETE) y son ideales para aplicaciones web distribuidas.</p>
-            <img src="https://cdn.pixabay.com/photo/2017/02/17/14/10/laptop-2076063_1280.jpg" class="img-fluid" alt="API REST">
+            <p class="text-dark">
+                Una API REST (API RESTful) es una interfaz que sigue los principios de la arquitectura REST para facilitar la interacción con servicios web. Actúa como un intermediario entre el cliente y el servidor, permitiendo que se soliciten y obtengan datos. A través de métodos HTTP, como GET o POST, las API RESTful permiten que los clientes reciban respuestas en formatos como JSON o HTML. Estas APIs son escalables, seguras y permiten un control preciso sobre la autenticación y el acceso a los recursos, sin que el usuario necesite conocer los detalles técnicos del sistema.
+            </p>
+            <img src="assets/api_inicio.png" class="img-fluid d-block mx-auto" alt="API REST">
         </section>
 
         <!-- Artículo 1 -->
@@ -89,12 +125,6 @@
             <p class="text-dark">Cada integrante del equipo debe escribir su conclusión aquí.</p>
         </section>
 
-        <!-- Equipo -->
-        <section id="equipo" class="bg-light p-4 mt-5 rounded">
-            <h2 class="text-primary">Equipo</h2>
-            <p class="text-dark">Danna Sofía Calderón Alegre & Julián Cárdenas Peñuela</p>
-        </section>
-
         <!-- Sección de Videos -->
         <section id="videos" class="bg-light p-4 mt-5 rounded">
             <h2 class="text-primary">Videos</h2>
@@ -107,10 +137,20 @@
         <section id="imagenes" class="bg-light p-4 mt-5 rounded">
             <h2 class="text-primary">Imágenes</h2>
         </section>
+
+    <!-- Equipo -->
+    <section id="equipo" class="bg-light p-4 mt-5 rounded">
+        <h2 class="text-primary">Equipo</h2>
+        <p class="text-dark">Danna Sofía Calderón Alegre & Julián Cárdenas Peñuela</p>
+    </section>
     </div>
+
+    
 
     <footer class="bg-primary text-white text-center p-3 mt-5">
         <p>&copy; 2024 Sitio Web API REST. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
