@@ -1,2 +1,4 @@
 # taller2ntd
 Danna Sofía Calderón Alegre &amp; Julián Cárdenas Peñuela
+
+Una API REST (API RESTful) es una interfaz que sigue los principios de la arquitectura REST para facilitar la interacción con servicios web. Actúa como un intermediario entre el cliente y el servidor, permitiendo que se soliciten y obtengan datos. A través de métodos HTTP, como GET o POST, las API RESTful permiten que los clientes reciban respuestas en formatos como JSON o HTML. Estas APIs son escalables, seguras y permiten un control preciso sobre la autenticación y el acceso a los recursos, sin que el usuario necesite conocer los detalles técnicos del sistema.

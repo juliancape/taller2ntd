@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web API REST</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">API REST</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#articulo1">Artículo 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#articulo2">Artículo 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#articulo3">Artículo 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conclusiones">Conclusiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#videos">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#imagenes">Imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Inicio -->
+        <section id="inicio" class="bg-light p-4 mt-4 rounded">
+            <h2 class="text-center text-primary">¿Qué es una API REST?</h2>
+            <p class="text-dark">
+                Una API REST (API RESTful) es una interfaz que sigue los principios de la arquitectura REST para facilitar la interacción con servicios web. Actúa como un intermediario entre el cliente y el servidor, permitiendo que se soliciten y obtengan datos. A través de métodos HTTP, como GET o POST, las API RESTful permiten que los clientes reciban respuestas en formatos como JSON o HTML. Estas APIs son escalables, seguras y permiten un control preciso sobre la autenticación y el acceso a los recursos, sin que el usuario necesite conocer los detalles técnicos del sistema.
+            </p>
+            <img src="assets/apigif.gif" class="img-fluid d-block mx-auto" alt="API REST">
+            <br>
+            <p class="text-dark mt-2">Para más información sobre APIs REST, visita <a href="https://www.redhat.com/es/topics/api/what-is-a-rest-api" target="_blank">este recurso</a>.</p>
+
+        </section>
+
+        <!-- Artículo 1 -->
+        <section id="articulo1" class="bg-white p-4 mt-5 rounded border">
+            <h2 class="text-primary">Artículo 1</h2>
+            <table class="table table-striped table-bordered">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Título</th>
+                        <th>Autores</th>
+                        <th>Resumen</th>
+                        <th>Palabras clave</th>
+                        <th>Año</th>
+                        <th>Publicado en</th>
+                        <th>Ideas principales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Developments and applications of the OPTIMADE API for materials discovery, design, and data exchange</td>
+                        <td>Matthew L. Evans, Johan Bergsma, Andrius Merkys, et al.</td>
+                        <td>
+                            El artículo aborda la API OPTIMADE, diseñada para mejorar el acceso y la interoperabilidad de datos en la investigación de materiales. La API facilita la integración de diversas bases de datos y optimiza la búsqueda y recuperación de datos de estructuras cristalinas mediante un formato estándar. Esto permite a los científicos y a la industria acceder a datos de manera más eficiente, acelerando la innovación y el descubrimiento de nuevos materiales.
+                        </td>
+                        <td>API, materiales, interoperabilidad, datos</td>
+                        <td>2024</td>
+                        <td>Royal Society of Chemistry</td>
+                        <td>
+                            1. La API OPTIMADE estandariza el acceso a datos de materiales, mejorando la interoperabilidad entre bases de datos.
+                            <br>2. Facilita la integración de datos de diferentes fuentes, permitiendo descubrimientos más rápidos y eficientes.
+                            <br>3. Contribuye a la creación de laboratorios autónomos al permitir la automatización en la búsqueda y análisis de datos.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <!-- Artículo 2 -->
+        <section id="articulo2" class="bg-white p-4 mt-5 rounded border">
+            <h2 class="text-primary">Artículo 2</h2>
+            <table class="table table-striped table-bordered">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Título</th>
+                        <th>Autores</th>
+                        <th>Resumen</th>
+                        <th>Palabras clave</th>
+                        <th>Año</th>
+                        <th>Publicado en</th>
+                        <th>Ideas principales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí irán los datos del artículo -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Artículo 3 -->
+        <section id="articulo3" class="bg-white p-4 mt-5 rounded border">
+            <h2 class="text-primary">Artículo 3</h2>
+            <table class="table table-striped table-bordered">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Título</th>
+                        <th>Autores</th>
+                        <th>Resumen</th>
+                        <th>Palabras clave</th>
+                        <th>Año</th>
+                        <th>Publicado en</th>
+                        <th>Ideas principales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí irán los datos del artículo -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Conclusiones -->
+        <section id="conclusiones" class="bg-light p-4 mt-5 rounded">
+            <h2 class="text-primary">Conclusiones</h2>
+            <p class="text-dark">
+                <strong>Artículo 1:</strong> El artículo "Developments and applications of the OPTIMADE API for materials discovery, design, and data exchange" ofrece una perspectiva valiosa sobre la evolución y aplicación de las APIs en el campo de la investigación de materiales. La API OPTIMADE, al estandarizar el acceso y la interoperabilidad de datos entre diferentes bases de datos, representa un avance significativo en la manera en que se gestionan y se utilizan los datos en la ciencia de materiales.
+
+                En el contexto de las APIs REST, este artículo ilustra cómo una API bien diseñada puede facilitar la integración y el análisis de grandes volúmenes de datos, optimizando así los procesos de descubrimiento y diseño de materiales. La capacidad de la API OPTIMADE para proporcionar un formato estandarizado y accesible para diversos tipos de datos no solo mejora la eficiencia en la investigación, sino que también permite una colaboración más efectiva entre diferentes plataformas y comunidades científicas.
+
+                Este artículo contribuye al tema general de las APIs REST al mostrar cómo las mejores prácticas en el diseño de APIs pueden ser aplicadas para resolver problemas complejos en campos especializados. La implementación de la API OPTIMADE demuestra el potencial de las APIs REST para transformar la forma en que se realizan las investigaciones y se toman decisiones basadas en datos, reafirmando su importancia en el avance de la ciencia y la tecnología.
+            </p>
+            <p class="text-dark">
+                <strong>Artículo 2:</strong> [Aquí se añadirá la conclusión del artículo 2.]
+            </p>
+            <p class="text-dark">
+                <strong>Artículo 3:</strong> [Aquí se añadirá la conclusión del artículo 3.]
+            </p>
+        </section>
+
+        <!-- Sección de Videos -->
+        <section id="videos" class="bg-light p-4 mt-5 rounded">
+            <h2 class="text-primary">Videos</h2>
+            <h3 class="text-secondary">REST y RESTful APIs | Te lo explico en 5 minutos!</h3>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JD6VNRdGl98" allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+        <!-- Sección de Imágenes -->
+        <section id="imagenes" class="bg-light p-4 mt-5 rounded">
+            <h2 class="text-primary">Imágenes</h2>
+            <h3 class="text-secondary">¿Qué es una API REST?</h3>
+            <img src="assets/img1_ai.png" class="img-fluid d-block mx-auto" alt="api">
+        </section>
+
+
+        <!-- Equipo -->
+        <section id="equipo" class="bg-light p-4 mt-5 rounded">
+            <h2 class="text-primary">Equipo</h2>
+            <div class="text-dark">
+                <h3>Danna Sofía Calderón Alegre</h3>
+                <p>
+                    <a href="https://github.com/danna-sofia" target="_blank">GitHub de Danna Sofía Calderón Alegre</a>
+                </p>
+            </div>
+            <div class="text-dark mt-4">
+                <h3>Julián Cárdenas Peñuela</h3>
+                <p>
+                    <a href="https://github.com/juliancape" target="_blank">GitHub de Julián Cárdenas Peñuela</a>
+                </p>
+            </div>
+        </section>
+
+
+    </div>
+
+    <footer class="bg-primary text-white text-center p-3 mt-5">
+        <p>&copy; 2024 Sitio Web API REST. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
