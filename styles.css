@@ -67,3 +67,7 @@ footer {
     height: 100%;
     border: 0;
 }
+.navbar-brand img {
+    width: 185px;
+    height: 60px;
+}

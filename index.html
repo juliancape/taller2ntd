@@ -12,32 +12,34 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">API REST</a>
+            <a class="navbar-brand" href="#"><img src="assets/logo2.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Inicio</a>
+                        <a class="flex-sm-fill text-sm-center nav-link active" href="#inicio">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#articulo1">Artículo 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#articulo2">Artículo 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#articulo3">Artículo 3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#conclusiones">Conclusiones</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Artículos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#articulo1">Artículo 1</a></li>
+                            <li><a class="dropdown-item" href="#articulo2">Artículo 2</a></li>
+                            <li><a class="dropdown-item" href="#articulo3">Artículo 3</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#conclusiones">Conclusiones</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#videos">Videos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#imagenes">Imágenes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Referencias">Referencias</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#equipo">Equipo</a>
@@ -52,7 +54,12 @@
         <section id="inicio" class="bg-light p-4 mt-4 rounded">
             <h2 class="text-center text-primary">¿Qué es una API REST?</h2>
             <p class="text-dark">
-                Una API REST (API RESTful) es una interfaz que sigue los principios de la arquitectura REST para facilitar la interacción con servicios web. Actúa como un intermediario entre el cliente y el servidor, permitiendo que se soliciten y obtengan datos. A través de métodos HTTP, como GET o POST, las API RESTful permiten que los clientes reciban respuestas en formatos como JSON o HTML. Estas APIs son escalables, seguras y permiten un control preciso sobre la autenticación y el acceso a los recursos, sin que el usuario necesite conocer los detalles técnicos del sistema.
+                Una API REST (API RESTful) es una interfaz que sigue los principios de la arquitectura REST para
+                facilitar la interacción con servicios web. Actúa como un intermediario entre el cliente y el servidor,
+                permitiendo que se soliciten y obtengan datos. A través de métodos HTTP, como GET o POST, las API
+                RESTful permiten que los clientes reciban respuestas en formatos como JSON o HTML. Estas APIs son
+                escalables, seguras y permiten un control preciso sobre la autenticación y el acceso a los recursos, sin
+                que el usuario necesite conocer los detalles técnicos del sistema.
             </p>
             <img src="assets/apigif.gif" class="img-fluid d-block mx-auto" alt="API REST">
             <br>
@@ -80,15 +87,21 @@
                         <td>Developments and applications of the OPTIMADE API for materials discovery, design, and data exchange</td>
                         <td>Matthew L. Evans, Johan Bergsma, Andrius Merkys, et al.</td>
                         <td>
-                            El artículo aborda la API OPTIMADE, diseñada para mejorar el acceso y la interoperabilidad de datos en la investigación de materiales. La API facilita la integración de diversas bases de datos y optimiza la búsqueda y recuperación de datos de estructuras cristalinas mediante un formato estándar. Esto permite a los científicos y a la industria acceder a datos de manera más eficiente, acelerando la innovación y el descubrimiento de nuevos materiales.
+                            El artículo aborda la API OPTIMADE, diseñada para mejorar el acceso y la interoperabilidad
+                            de datos en la investigación de materiales. La API facilita la integración de diversas bases
+                            de datos y optimiza la búsqueda y recuperación de datos de estructuras cristalinas mediante
+                            un formato estándar. Esto permite a los científicos y a la industria acceder a datos de
+                            manera más eficiente, acelerando la innovación y el descubrimiento de nuevos materiales.
                         </td>
                         <td>API, materiales, interoperabilidad, datos</td>
                         <td>2024</td>
                         <td>Royal Society of Chemistry</td>
                         <td>
-                            1. La API OPTIMADE estandariza el acceso a datos de materiales, mejorando la interoperabilidad entre bases de datos.
-                            <br>2. Facilita la integración de datos de diferentes fuentes, permitiendo descubrimientos más rápidos y eficientes.
-                            <br>3. Contribuye a la creación de laboratorios autónomos al permitir la automatización en la búsqueda y análisis de datos.
+                            <ol>
+                                <li>La API OPTIMADE estandariza el acceso a datos de materiales, mejorando la interoperabilidad entre bases de datos.</li>
+                                <li>Facilita la integración de datos de diferentes fuentes, permitiendo descubrimientos más rápidos y eficientes.</li>
+                                <li>Contribuye a la creación de laboratorios autónomos al permitir la automatización en la búsqueda y análisis de datos.</li>
+                            </ol>
                         </td>
                     </tr>
                 </tbody>
@@ -115,9 +128,19 @@
                         <td>The Materials Application Programming Interface (API): A simple,
                             flexible and efficient API for materials data based on REpresentational
                             State Transfer (REST) principles.</td>
-                        <td>Shyue Ping Ong, Shreyas Cholia, Anubhav Jain, Miriam Brafman, Dan Gunter, Gerbrand Ceder, Kristin A.</td>
+                        <td>Shyue Ping Ong, Shreyas Cholia, Anubhav Jain, Miriam Brafman, Dan Gunter, Gerbrand Ceder,
+                            Kristin A.</td>
                         <td>
-                            El artículo describe la Interfaz de Programación de Aplicaciones de Materiales (API de Materiales), que es una herramienta simple, flexible y eficiente para acceder y manipular datos del Proyecto de Materiales, basado en los principios de Transferencia de Estado Representacional (REST). La API ha sido fundamental para el acceso a los datos del Proyecto de Materiales, facilitando colaboraciones, nuevas aplicaciones y análisis avanzados de materiales. El artículo destaca cómo la API permite la consolidación de datos a gran escala, como la minería de datos de estructuras y tendencias de propiedades, y la generación de diagramas de fases. Además, se discute el rol de la API en la construcción de una comunidad que desarrolla nuevas aplicaciones y análisis basados en los datos del Proyecto de Materiales.
+                            El artículo describe la Interfaz de Programación de Aplicaciones de Materiales (API de
+                            Materiales), que es una herramienta simple, flexible y eficiente para acceder y manipular
+                            datos del Proyecto de Materiales, basado en los principios de Transferencia de Estado
+                            Representacional (REST). La API ha sido fundamental para el acceso a los datos del Proyecto
+                            de Materiales, facilitando colaboraciones, nuevas aplicaciones y análisis avanzados de
+                            materiales. El artículo destaca cómo la API permite la consolidación de datos a gran escala,
+                            como la minería de datos de estructuras y tendencias de propiedades, y la generación de
+                            diagramas de fases. Además, se discute el rol de la API en la construcción de una comunidad
+                            que desarrolla nuevas aplicaciones y análisis basados en los datos del Proyecto de
+                            Materiales.
                         </td>
                         <td>Materials Project
                             Application Programming Interface
@@ -158,8 +181,7 @@
                     <tr>
                         <td>Microservice API Evolution in Practice: A Study on Strategies and Challenges</td>
                         <td>Alexander Lercher, Johann Glock, Christian Macho, Martin Pinzger.</td>
-                        <td>
-                            El artículo proporciona una visión integral de los desafíos y estrategias en la evolución de las API en entornos de microservicios, subrayando la necesidad de una documentación clara y contextualizada para facilitar la integración y el mantenimiento de estas interfaces.
+                        <td>El artículo proporciona una visión integral de los desafíos y estrategias en la evolución de las API en entornos de microservicios, subrayando la necesidad de una documentación clara y contextualizada para facilitar la integración y el mantenimiento de estas interfaces.
                         </td>
                         <td>Microservice architecture,
                             API evolution,
@@ -167,7 +189,7 @@
                             Backward compatibility,
                             API design degradation,
                             Development team collaboration.
-                            </td>
+                        </td>
                         <td>2023</td>
                         <td>Sciencie Direct Scopus</td>
                         <td>
@@ -186,11 +208,23 @@
         <section id="conclusiones" class="bg-light p-4 mt-5 rounded">
             <h2 class="text-primary">Conclusiones</h2>
             <p class="text-dark">
-                <strong>Artículo 1:</strong> El artículo "Developments and applications of the OPTIMADE API for materials discovery, design, and data exchange" ofrece una perspectiva valiosa sobre la evolución y aplicación de las APIs en el campo de la investigación de materiales. La API OPTIMADE, al estandarizar el acceso y la interoperabilidad de datos entre diferentes bases de datos, representa un avance significativo en la manera en que se gestionan y se utilizan los datos en la ciencia de materiales.
+                <strong>Artículo 1:</strong> El artículo "Developments and applications of the OPTIMADE API for
+                materials discovery, design, and data exchange" ofrece una perspectiva valiosa sobre la evolución y
+                aplicación de las APIs en el campo de la investigación de materiales. La API OPTIMADE, al estandarizar
+                el acceso y la interoperabilidad de datos entre diferentes bases de datos, representa un avance
+                significativo en la manera en que se gestionan y se utilizan los datos en la ciencia de materiales.
 
-                En el contexto de las APIs REST, este artículo ilustra cómo una API bien diseñada puede facilitar la integración y el análisis de grandes volúmenes de datos, optimizando así los procesos de descubrimiento y diseño de materiales. La capacidad de la API OPTIMADE para proporcionar un formato estandarizado y accesible para diversos tipos de datos no solo mejora la eficiencia en la investigación, sino que también permite una colaboración más efectiva entre diferentes plataformas y comunidades científicas.
+                En el contexto de las APIs REST, este artículo ilustra cómo una API bien diseñada puede facilitar la
+                integración y el análisis de grandes volúmenes de datos, optimizando así los procesos de descubrimiento
+                y diseño de materiales. La capacidad de la API OPTIMADE para proporcionar un formato estandarizado y
+                accesible para diversos tipos de datos no solo mejora la eficiencia en la investigación, sino que
+                también permite una colaboración más efectiva entre diferentes plataformas y comunidades científicas.
 
-                Este artículo contribuye al tema general de las APIs REST al mostrar cómo las mejores prácticas en el diseño de APIs pueden ser aplicadas para resolver problemas complejos en campos especializados. La implementación de la API OPTIMADE demuestra el potencial de las APIs REST para transformar la forma en que se realizan las investigaciones y se toman decisiones basadas en datos, reafirmando su importancia en el avance de la ciencia y la tecnología.
+                Este artículo contribuye al tema general de las APIs REST al mostrar cómo las mejores prácticas en el
+                diseño de APIs pueden ser aplicadas para resolver problemas complejos en campos especializados. La
+                implementación de la API OPTIMADE demuestra el potencial de las APIs REST para transformar la forma en
+                que se realizan las investigaciones y se toman decisiones basadas en datos, reafirmando su importancia
+                en el avance de la ciencia y la tecnología.
             </p>
             <p class="text-dark">
                 <strong>Artículo 2:</strong> [Aquí se añadirá la conclusión del artículo 2.]
@@ -223,26 +257,32 @@
         <section id="Referencias" class="bg-light p-4 mt-5 rounded">
             <h2 class="text-primary">Referencias</h2>
             <p class="text-dark">
-                <ol type="I">
-                    <li>Evans. M, Bergsma. J, Merkys. A, et al. (2024). 
-                        <em>Developments and applications of the OPTIMADE API for materials discovery, design, and data exchange.</em>
-                        Royal Society of Chemistry.</li>
-                    <li>Ping.S, Cholia. S, Jain. A, Brafman. M, Gunter. D, Ceder. G, Kristin A. (2014).
-                        <em>The Materials Application Programming Interface (API): A simple, flexible and efficient API for materials data based on REpresentational State Transfer (REST) principles.</em>
-                        Sciencie Direct Scopus.</li>
-                    <li>Lercher. A, Glock. J, Macho. C, Pinzger M. (2023)
-                        <em>Microservice API Evolution in Practice: A Study on Strategies and Challenges.</em>
-                        Sciencie Direct Scopus.</li>
-                    <li>Kuffo L. (2020). 
-                        <em>REST y RESTful APIs | Te lo explico en 5 minutos!</em>
-                        YouTube. <a href="https://youtu.be/JD6VNRdGl98?si=c_dSSUO84Gl70sNJ" target="_blank">Url Video.</a></li>
-                    <li>Make Computer Science Great Again. (2023, October 30).
-                        <em>Understanding REST API: A Comprehensive Guide.</em> 
-                        Medium. <a href="https://medium.com/@MakeComputerScienceGreatAgain/understanding-rest-api-a-comprehensive-guide-52fc10f6c9ed" target="_blank">Url Page.</a></li>
-                    <li>Manual de Desarrollo de APIs. (2014, December 19).
-                        <em>Ventajas e inconvenientes de API REST para el desarrollo.</em>
-                        Desarrollowe6.com <a href="https://desarrolloweb.com/articulos/ventajas-inconvenientes-apirest-desarrollo.html" target="_blank">Url Page.</a></li>
-                  </ol>
+            <ol type="I">
+                <li>Evans. M, Bergsma. J, Merkys. A, et al. (2024).
+                    <em>Developments and applications of the OPTIMADE API for materials discovery, design, and data exchange.</em>
+                    Royal Society of Chemistry.
+                </li>
+                <li>Ping.S, Cholia. S, Jain. A, Brafman. M, Gunter. D, Ceder. G, Kristin A. (2014).
+                    <em>The Materials Application Programming Interface (API): A simple, flexible and efficient API for materials data based on REpresentational State Transfer (REST) principles.</em>
+                    Sciencie Direct Scopus.
+                </li>
+                <li>Lercher. A, Glock. J, Macho. C, Pinzger M. (2023)
+                    <em>Microservice API Evolution in Practice: A Study on Strategies and Challenges.</em>
+                    Sciencie Direct Scopus.
+                </li>
+                <li>Kuffo L. (2020).
+                    <em>REST y RESTful APIs | Te lo explico en 5 minutos!</em>
+                    YouTube. <a href="https://youtu.be/JD6VNRdGl98?si=c_dSSUO84Gl70sNJ" target="_blank">Url Video.</a>
+                </li>
+                <li>Make Computer Science Great Again. (2023, October 30).
+                    <em>Understanding REST API: A Comprehensive Guide.</em>
+                    Medium. <a href="https://medium.com/@MakeComputerScienceGreatAgain/understanding-rest-api-a-comprehensive-guide-52fc10f6c9ed" target="_blank">Url Page.</a>
+                </li>
+                <li>Manual de Desarrollo de APIs. (2014, December 19).
+                    <em>Ventajas e inconvenientes de API REST para el desarrollo.</em>
+                    Desarrollowe6.com <a href="https://desarrolloweb.com/articulos/ventajas-inconvenientes-apirest-desarrollo.html" target="_blank">Url Page.</a>
+                </li>
+            </ol>
             </p>
         </section>
 
