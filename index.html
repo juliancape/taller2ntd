@@ -48,6 +48,12 @@
             </div>
         </div>
     </nav>
+    <div class="container-fluid mt-3">
+        <div class="input-group mb-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Buscar artículo...">
+            <button class="btn btn-outline-secondary" type="button" onclick="searchArticle()">Buscar</button>
+        </div>
+    </div>
 
     <div class="container">
         <!-- Inicio -->
@@ -68,7 +74,7 @@
         </section>
 
         <!-- Artículo 1 -->
-        <section id="articulo1" class="bg-white p-4 mt-5 rounded border">
+        <section id="articulo1" data-title="api" class="bg-white p-4 mt-5 rounded border">
             <h2 class="text-primary">Artículo 1</h2>
             <table class="table table-striped table-bordered">
                 <thead class="table-primary">
@@ -109,7 +115,7 @@
         </section>
 
         <!-- Artículo 2 -->
-        <section id="articulo2" class="bg-white p-4 mt-5 rounded border">
+        <section id="articulo2" data-title="materia" class="bg-white p-4 mt-5 rounded border">
             <h2 class="text-primary">Artículo 2</h2>
             <table class="table table-striped table-bordered">
                 <thead class="table-primary">
@@ -163,7 +169,7 @@
         </section>
 
         <!-- Artículo 3 -->
-        <section id="articulo3" class="bg-white p-4 mt-5 rounded border">
+        <section id="articulo3" data-title="microprocesador" class="bg-white p-4 mt-5 rounded border">
             <h2 class="text-primary">Artículo 3</h2>
             <table class="table table-striped table-bordered">
                 <thead class="table-primary">
@@ -246,8 +252,7 @@
                 Se destacan seis estrategias clave para esta evolución, como asegurar la compatibilidad con versiones anteriores y mantener 
                 una colaboración cercana entre equipos. También se señalan dos problemas, por las que los autores tuvieron como referencia al
                 realizar el artículo, las cuales generaron una necesidad de constante comunicación entre equipos
-                ("acoplamiento organizacional estrecho") y la dependencia de versiones antiguas de la API ("bloqueo del consumidor"). 
-                
+                ("acoplamiento organizacional estrecho") y la dependencia de versiones antiguas de la API ("bloqueo del consumidor").
                 Estos problemas pueden aumentar la complejidad del sistema y dificultar la gestión de cambios en el sistema, sin embargo 
                 el artículo nos brinda una serie de soluciones automatizadas, para tener una coordinación entre equipos, las cuales pueden
                 adaptarse a la capacidad del sistema para evolucionar de manera flexible y responder a nuevas demandas o mejoras tecnológicas.
@@ -323,13 +328,11 @@
             </div>
         </section>
 
-
     </div>
-
     <footer class="bg-primary text-white text-center p-3 mt-5">
         <p>&copy; 2024 Sitio Web API REST. Todos los derechos reservados.</p>
     </footer>
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
